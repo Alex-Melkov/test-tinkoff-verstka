@@ -1,4 +1,9 @@
 @import './blocks/header.scss';
+@import './blocks/business.scss';
+@import './blocks/tasks.scss';
+@import './blocks/decision.scss';
+@import './blocks/result.scss';
+@import './blocks/conclusion.scss';
 
 * {
     padding: 0;
@@ -54,4 +59,18 @@ button {
     border: 1px solid #DCE2E8;
     padding: 50px 48px 50px 48px;
     background: #FFFFFF;
+}
+
+.heading_h2 {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    color: #333333;
+}
+
+.section_text {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+    color: #333333;
 }

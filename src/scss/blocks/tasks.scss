@@ -1,0 +1,25 @@
+.tasks {
+    margin-bottom: 76px;
+    h2 {
+        margin-bottom: 16px;
+    }
+    p {
+        margin-bottom: 20px;
+
+        b {
+            font-weight: 700;
+        }
+
+        &:last-of-type {
+            margin-bottom: 0
+        }
+    }
+    ul {
+        li {
+            margin-bottom: 20px;
+            b {
+                font-weight: 700
+            }
+        }
+    }
+}

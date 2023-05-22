@@ -1,0 +1,40 @@
+.decision {
+    margin-bottom: 48px;
+    .decision__title {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+
+        svg {
+            margin-left: 8px;
+            margin-right: 8px;
+        }
+
+        h2:last-of-type {
+            border-bottom: 1px solid rgba(51, 111, 238, 0.2);
+            a {
+                color: #597DB3;
+                cursor: pointer;
+            }
+        }
+
+        a {
+            color: #597DB3;
+            cursor: pointer;
+        }
+
+    }
+    ul {
+        li {
+            margin-bottom: 16px;
+
+            b {
+                font-weight: 700;
+            }
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.conclusion_desktop {
+    min-width: 695px;
+    margin-bottom: 30px;
+    h2 {
+        margin-bottom: 16px;
+    }
+    p:not(:last-of-type) {
+        margin-bottom: 20px;
+    }
+}
+
+.conclusion_tablet-and-mobile {
+    margin-bottom: 30px;
+    h2 {
+        margin-bottom: 12px;
+    }
+}
