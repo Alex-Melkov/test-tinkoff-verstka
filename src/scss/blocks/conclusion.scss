@@ -1,8 +1,9 @@
 .conclusion_desktop {
-    min-width: 695px;
-    margin-bottom: 30px;
-    h2 {
-        margin-bottom: 16px;
+    display: none;
+    @media (min-width: 1280px) {
+        display: block;
+        min-width: 695px;
+        margin-bottom: 30px;
     }
     p:not(:last-of-type) {
         margin-bottom: 20px;
@@ -10,8 +11,18 @@
 }
 
 .conclusion_tablet-and-mobile {
+    display: none;
     margin-bottom: 30px;
+    @media (max-width: 1279px){
+        display: block;
+    }
+    @media (max-width: 768px){
+        margin-bottom: 28px;
+    }
+
     h2 {
-        margin-bottom: 12px;
+        @media (max-width: 768px){
+            margin-bottom: 4px;
+        }
     }
 }

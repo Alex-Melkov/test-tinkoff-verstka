@@ -1,16 +1,32 @@
 .decision {
     margin-bottom: 48px;
+    @media (max-width: 768px) {
+        margin-bottom: 36px;
+    }
     .decision__title {
         display: flex;
         align-items: center;
         margin-bottom: 16px;
+        @media (max-width: 768px) {
+            display: block;
+        }
 
-        svg {
-            margin-left: 8px;
-            margin-right: 8px;
+        h2 {
+            display: flex;
+            align-items: center;
+            @media (max-width: 768px) {
+                &:first-of-type {
+                    margin-bottom: 0;
+                }
+            }
+            svg {
+                margin-left: 8px;
+                margin-right: 8px;
+            }
         }
 
         h2:last-of-type {
+            display: inline;
             border-bottom: 1px solid rgba(51, 111, 238, 0.2);
             a {
                 color: #597DB3;

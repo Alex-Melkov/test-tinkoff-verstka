@@ -49,17 +49,45 @@ button {
 }
 
 .wrapper {
-    margin-top: 80px;
-    margin-bottom: 80px;
-    margin-left: 200px;
-    margin-right: auto;
+    @media (min-width: 320px) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    @media (min-width: 768px) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    @media (min-width: 1280px) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
 }
 
 .container {
-    max-width: 784px;
     border: 1px solid #DCE2E8;
-    padding: 50px 48px 50px 48px;
     background: #FFFFFF;
+    @media (min-width: 320px) {
+        max-width: 288px;
+        padding: 24px 24px 36px 24px;
+        margin: 0 auto;
+    }
+    @media (min-width: 768px) {
+        max-width: 608px;
+        padding: 48px;
+        margin: 0 auto;
+    }
+    @media (min-width: 1280px) {
+        max-width: 784px;
+        padding: 50px 48px 50px 48px;
+        margin: 0 auto;
+        margin-left: 200px;
+    }
 }
 
 .heading_h2 {
@@ -67,6 +95,14 @@ button {
     font-size: 28px;
     line-height: 32px;
     color: #333333;
+    margin-bottom: 16px;
+    @media (max-width: 1280px) and (min-width: 768px){
+        margin-bottom: 12px;
+    }
+    @media (max-width: 1280px) {
+        font-size: 21px;
+        line-height: 28px;
+    }
 }
 
 .section_text {
@@ -74,4 +110,10 @@ button {
     font-size: 17px;
     line-height: 28px;
     color: #333333;
+    margin-bottom: 20px;
+    @media (max-width: 1280px) {
+        font-size: 15px;
+        line-height: 24px;
+        margin-bottom: 16px;
+    }
 }

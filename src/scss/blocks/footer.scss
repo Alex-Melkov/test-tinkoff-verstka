@@ -1,12 +1,22 @@
 .footer {
     display: flex;
     justify-content: space-between;
+    @media (max-width: 768px){
+        display: block;
+    }
     .author {
         max-width: 288px;
+        @media (max-width: 768px){
+            max-width: 240px;
+            margin-bottom: 8px;
+        }
         .author__blocks {
             display: flex;
             justify-content: space-between;
             margin-bottom: 50px;
+            @media (max-width: 768px){
+                margin-bottom: 36px;
+            }
             .author__blocks__logo {
                 width: 64px;
                 height: 64px;
@@ -19,6 +29,9 @@
             }
             .author__blocks__info {
                 max-width: 208px;
+                @media (max-width: 768px){
+                    max-width: 160px;
+                }
                 .author__blocks__info__name {
                     font-weight: 700;
                     font-size: 15px;
@@ -42,6 +55,7 @@
     }
 
     .link-continuation {
+        display: inline-block;
         align-self: flex-end;
         border-bottom: 1px solid rgba(89, 125, 179, 0.2);
 
