@@ -1,0 +1,56 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    .author {
+        max-width: 288px;
+        .author__blocks {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 50px;
+            .author__blocks__logo {
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+                background: #F1F3F5;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 16px;
+            }
+            .author__blocks__info {
+                max-width: 208px;
+                .author__blocks__info__name {
+                    font-weight: 700;
+                    font-size: 15px;
+                    line-height: 20px;
+                    color: #333333;
+                }
+                .author__blocks__info__post {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #808C9E;
+                }
+            }
+        }
+        .editor {
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 20px;
+            color: #808C9E;
+        }
+    }
+
+    .link-continuation {
+        align-self: flex-end;
+        border-bottom: 1px solid rgba(89, 125, 179, 0.2);
+
+        a {
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 20px;
+            color: #597DB3;
+            cursor: pointer;
+        }
+    }
+}
